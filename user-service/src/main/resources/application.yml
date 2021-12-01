@@ -1,0 +1,14 @@
+server:
+  port: 8201
+spring:
+  application:
+    name: user-service
+  cloud:
+    inetutils:
+      preferred-networks: 192.168.124
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://tongye:123456@localhost:8001/eureka/
